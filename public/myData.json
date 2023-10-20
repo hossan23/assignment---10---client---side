@@ -1,0 +1,32 @@
+[
+ {
+  "id": 1,
+  "brand_name": "Toyota",
+  "brand_image": "https://i.ibb.co/HVqtYZg/Toyota-Logo-Real-Company-Alphabet-Letter-T-Logo.jpg"
+ },
+ {
+  "id": 2,
+  "brand_name": "Honda",
+  "brand_image": "https://i.ibb.co/hDn6m4s/Honda-H-Black-vector-logo-EPS-free-download.jpg"
+ },
+ {
+  "id": 3,
+  "brand_name": "Bmw",
+  "brand_image": "https://i.ibb.co/yhPbsJs/bm.jpg"
+ },
+ {
+  "id": 4,
+  "brand_name": "Mercedes",
+  "brand_image": "https://i.ibb.co/YB05kzG/FABRICANTE-DE-EQUIPOS-ORIGINALES-Mercedes-Benz-Genuino-Tap-n-Central-A22240022009040-Juego-de-Cuatro.jpg"
+ },
+ {
+  "id": 5,
+  "brand_name": "Nissan",
+  "brand_image": "https://i.ibb.co/nj4kjJj/Nissan-Logo-HD-Png-Meaning-Brand-Overview.jpg"
+ },
+ {
+  "id": 6,
+  "brand_name": "Audi",
+  "brand_image": "https://i.ibb.co/xhQ04w0/On-circular-logos-Logo-Design-Love.jpg"
+ }
+]
