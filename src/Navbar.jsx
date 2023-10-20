@@ -46,7 +46,7 @@ const Navbar = () => {
     </div>
     <Link to="/" className="btn btn-ghost normal-case text-xl">
      <img src="https://i.ibb.co/XJZJnSR/hatchback.png" alt="" />
-     AutoMotive
+     <span className="hidden md:block">AutoMotive</span>
     </Link>
    </div>
    <div className="navbar-center hidden lg:flex">
@@ -54,11 +54,12 @@ const Navbar = () => {
    </div>
    <div className="navbar-end">
     {user ? (
-     <button className="btn btn-primary capitalize" onClick={handleLogout}>
-      {user.displayName}
-
-      <p className="text-red-400">logout</p>
-     </button>
+     <div className="flex items-center">
+      <img src={user.photoURL} alt="" className="w-10 rounded-full hidden md:block" />
+      <button className="btn capitalize" onClick={handleLogout}>
+       <span className="text-purple-400">{user.displayName}</span>logout
+      </button>
+     </div>
     ) : (
      <button className="btn btn-secondary">
       <Link to="/login">Login</Link>

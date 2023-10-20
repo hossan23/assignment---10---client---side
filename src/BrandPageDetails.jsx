@@ -16,11 +16,11 @@ const BrandPageDetails = ({ data }) => {
     <p className="">Ratings : {rating}</p>
 
     <div className="card-actions justify-end">
-     <Link to={`/detailsPage/${_id}`} className="badge badge-outline">
-      Details
+     <Link to={`/detailsPage/${_id}`}>
+      <button className="btn btn-neutral">Details</button>
      </Link>
-     <Link to={`/update/${_id}`} className="badge badge-outline">
-      Update
+     <Link to={`/update/${_id}`}>
+      <button className="btn btn-accent">Update</button>
      </Link>
     </div>
    </div>

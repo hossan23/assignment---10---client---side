@@ -1,10 +1,12 @@
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 
 const Update = () => {
  const singleData = useLoaderData();
  console.log(singleData);
  const { _id, image, name, brand, price, type, description, rating } = singleData;
+
+ const navigate = useNavigate();
 
  const handleUpdate = e => {
   e.preventDefault(e);
@@ -19,6 +21,7 @@ const Update = () => {
   const updatedProduct = { image, name, brand, price, type, description, rating };
   console.log(updatedProduct);
 
+  form.reset();
   fetch(`http://localhost:5000/products/${_id}`, {
    method: 'PUT',
    headers: {
@@ -31,9 +34,8 @@ const Update = () => {
     if (data.modifiedCount > 0) {
      swal('Good job!', 'Product Updated successfully!', 'success');
     }
+    navigate('/');
    });
-
-  //   form.reset();
  };
  return (
   <div className="bg-[#F4F3F0] p-24">
@@ -106,7 +108,7 @@ const Update = () => {
       </label>
      </div>
     </div>
-    <input type="submit" value="Add Product" className="btn btn-block btn-neutral" />
+    <input type="submit" value="Update Product" className="btn btn-block btn-neutral" />
    </form>
   </div>
  );

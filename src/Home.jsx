@@ -6,18 +6,11 @@ const Home = () => {
 
  return (
   <div>
-   <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/94KWKCt/pexels-vitali-adutskevich-14065228.jpg)' }}>
-    <div className="hero-overlay bg-opacity-60"></div>
-    <div className="hero-content text-center text-neutral-content">
-     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">AutoMotive</h1>
-
-      <p className="mb-5">Revolutionizing Your Drive: Welcome to AutoMotive, where innovation meets acceleration. Discover cutting-edge automotive solutions, expert servicing, and a passion for performance that drives us forward. Elevate your journey with us today!</p>
-     </div>
-    </div>
+   <div className="hero ">
+    <img src="https://img.freepik.com/free-vector/car-rental-service-sale-banner-template_23-2150461697.jpg?w=1380&t=st=1697812138~exp=1697812738~hmac=b3dd184edf39033bdc50d1c01275b5d688c8be00010fecade6cc155e7c66aefe" className="w-full" />
    </div>
 
-   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:mt-8">
     {allData.map(data => (
      <HomeCard key={data.id} data={data}></HomeCard>
     ))}

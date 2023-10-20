@@ -13,10 +13,12 @@ import BrandPage from './BrandPage';
 import PrivateRoutes from './PrivateRoutes';
 import DetailsPage from './DetailsPage';
 import Update from './Update';
+import ErrorPage from './ErrorPage';
 const router = createBrowserRouter([
  {
   path: '/',
   element: <Root></Root>,
+  errorElement: <ErrorPage></ErrorPage>,
   children: [
    {
     path: '/',
