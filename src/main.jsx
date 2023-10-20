@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       <Cart></Cart>,
      </PrivateRoutes>
     ),
-    loader: () => fetch('http://localhost:5000/myCart'),
+    loader: () => fetch('https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/myCart'),
    },
    {
     path: '/login',
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
    {
     path: '/brandPage/:brand_name',
     element: <BrandPage></BrandPage>,
-    loader: () => fetch('http://localhost:5000/products'),
+    loader: () => fetch('https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/products'),
    },
    {
     path: '/detailsPage/:_id',
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       <DetailsPage></DetailsPage>
      </PrivateRoutes>
     ),
-    loader: () => fetch('http://localhost:5000/products'),
+    loader: () => fetch('https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/products'),
    },
    {
     path: '/update/:_id',
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
       <Update></Update>,
      </PrivateRoutes>
     ),
-    loader: ({ params }) => fetch(`http://localhost:5000/products/${params._id}`),
+    loader: ({ params }) => fetch(`https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/products/${params._id}`),
    },
   ],
  },

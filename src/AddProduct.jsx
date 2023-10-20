@@ -17,7 +17,7 @@ const AddProduct = () => {
   const rating = form.rating.value;
   const newProduct = { image, name, brand, price, type, description, rating };
 
-  fetch('http://localhost:5000/products', {
+  fetch('https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/products', {
    method: 'POST',
    headers: {
     'Content-Type': 'application/json',
