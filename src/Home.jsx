@@ -3,13 +3,11 @@ import HomeCard from './HomeCard';
 
 const Home = () => {
  const allData = useLoaderData();
+ const[]
 
  return (
   <div>
-   <div>
-    <button className="btn">Theme</button>
-   </div>
-   <div className="hero ">
+   <div className="hero">
     <img src="https://img.freepik.com/free-vector/car-rental-service-sale-banner-template_23-2150461697.jpg?w=1380&t=st=1697812138~exp=1697812738~hmac=b3dd184edf39033bdc50d1c01275b5d688c8be00010fecade6cc155e7c66aefe" className="w-full" />
    </div>
 
