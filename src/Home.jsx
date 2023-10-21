@@ -1,31 +1,13 @@
 import { useLoaderData } from 'react-router-dom';
 import HomeCard from './HomeCard';
-import { useEffect, useState } from 'react';
 
 const Home = () => {
  const allData = useLoaderData();
- const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
-
- const handleClick = e => {
-  if (e.target.checked) {
-   setTheme('dark');
-  } else {
-   setTheme('light');
-  }
- };
-
- useEffect(() => {
-  localStorage.setItem('theme', theme);
-  const localTheme = localStorage.getItem('theme');
-  document.querySelector('html').setAttribute('data-theme', localTheme);
- }, [theme]);
 
  return (
   <div>
    <div>
-    <button className="btn" onClick={handleClick}>
-     Theme
-    </button>
+    <button className="btn">Theme</button>
    </div>
    <div className="hero ">
     <img src="https://img.freepik.com/free-vector/car-rental-service-sale-banner-template_23-2150461697.jpg?w=1380&t=st=1697812138~exp=1697812738~hmac=b3dd184edf39033bdc50d1c01275b5d688c8be00010fecade6cc155e7c66aefe" className="w-full" />
