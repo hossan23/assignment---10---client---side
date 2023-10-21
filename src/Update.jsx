@@ -22,7 +22,7 @@ const Update = () => {
   console.log(updatedProduct);
 
   form.reset();
-  fetch(`https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/products/${_id}`, {
+  fetch(`https://assignment-10-server-side-jade.vercel.app/products/${_id}`, {
    method: 'PUT',
    headers: {
     'Content-Type': 'application/json',

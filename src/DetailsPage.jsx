@@ -3,7 +3,6 @@ import DetailsPageCom from './DetailsPageCom';
 
 const DetailsPage = () => {
  const allData = useLoaderData();
- console.log(allData);
  const { _id } = useParams();
 
  const allDetails2 = allData.filter(data => data._id == _id);

@@ -8,7 +8,7 @@ const DetailsPageCom = ({ detail }) => {
  const handleClick = e => {
   e.preventDefault();
 
-  fetch('https://assignment-10-server-side-lczfi2od6-imamhossans-projects.vercel.app/myCart', {
+  fetch('https://assignment-10-server-side-jade.vercel.app/myCart', {
    method: 'POST',
    headers: {
     'Content-Type': 'application/json',
