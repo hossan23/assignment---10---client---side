@@ -1,9 +1,11 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from './AuthProvider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 
 const Login = () => {
  const { login, googleLogin } = useContext(AuthContext);
+ const [error, setError] = useState('');
  const location = useLocation();
  const navigate = useNavigate();
 
@@ -19,10 +21,12 @@ const Login = () => {
   console.log(myData);
   login(email, password)
    .then(result => {
+    swal('Account Created!', '', 'success');
     console.log(result.user);
     navigate(location?.state ? location.state : '/');
    })
    .catch(error => {
+    setError(error.message);
     console.log(error.message);
    });
   form.reset();
@@ -63,6 +67,7 @@ const Login = () => {
       <Link className="text-center" to="/register">
        Do not have an account?
       </Link>
+      <p className="text-sm">{error}</p>
      </form>
      <div className="text-center">
       <button onClick={handleGoogle} className="btn btn-accent w-fit mb-6 capitalize">
