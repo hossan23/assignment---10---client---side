@@ -1,8 +1,8 @@
-# React + Vite
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Uses Express.js for easy server setup and handling HTTP requests.
+- Connects to MongoDB Atlas and defines collections for users, surveys, and voters.
+- Supports CRUD operations for users, surveys, and voters through various API endpoints.
+- Includes functionality to create payment intents for secure credit card transactions using the Stripe API.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Live site link : https://assignment-10-55616.web.app
